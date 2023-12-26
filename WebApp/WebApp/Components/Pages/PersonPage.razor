@@ -1,0 +1,14 @@
+﻿@page "/person-page"
+@using SharedLibrary
+
+<h3>PersonPage</h3>
+
+<PersonDetails Person="GetPerson()" />
+
+@code {
+    Person GetPerson() => new Person()
+    {
+        Name = "John Doe",
+        Age = 42,
+    };
+}
